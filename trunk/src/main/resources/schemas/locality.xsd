@@ -1,0 +1,43 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:hr="http://slackers.se/hr/schemas" elementFormDefault="qualified"
+	targetNamespace="http://slackers.se/hr/schemas">
+	<!-- 
+		<xs:element name="HolidayRequest">
+		<xs:complexType>
+		<xs:all>
+		<xs:element name="Holiday" type="hr:HolidayType" />
+		<xs:element name="Employee" type="hr:EmployeeType" />
+		</xs:all>
+		</xs:complexType>
+		</xs:element>
+	-->
+
+	<xs:complexType name="MetaTagType">
+		<xs:sequence>
+			<xs:element name="Name" type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="TagType">
+		<xs:sequence>
+			<xs:element name="Name" type="xs:string" />
+			<xs:element name="MetaTags" maxOccurs="1" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="MetaTag"
+							type="MetaTagType">
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="EmployeeType">
+		<xs:sequence>
+			<xs:element name="Number" type="xs:integer" />
+			<xs:element name="FirstName" type="xs:string" />
+			<xs:element name="LastName" type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
