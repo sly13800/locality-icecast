@@ -1,5 +1,0 @@
-#summary Project news
-
-= News =
-*2008-07-14:*
-Created this google code page. I've recently found a bug that appear when connection multiple times to the server. I'm hoping to fix it this week. Before the bug is fixed no code will be checked in. ie I want to startup with working code.
