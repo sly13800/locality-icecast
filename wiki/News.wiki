@@ -1,6 +1,9 @@
 #summary Project news
 
 = News =
+*2008-07-13:*
+Plans for rewriting the project using [http://springframework.org/osgi Spring Dynamic Modules] is on the way. OSGI FTW!
+
 *2008-07-14:*
 Working version commited to the repository. But a big refactoring is on the way.
 
